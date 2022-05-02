@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.Display">
+
+    <TextView
+        android:id="@+id/txtEmployeeName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Employee Name: "
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtEmployeeType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="32dp"
+        android:text="Employee Type: "
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeeName" />
+
+    <TextView
+        android:id="@+id/txtHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Hours Worked: "
+        app:layout_constraintStart_toStartOf="@+id/txtEmployeeType"
+        app:layout_constraintTop_toBottomOf="@+id/txtEmployeeType" />
+
+    <TextView
+        android:id="@+id/txtOverTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Overtime: "
+        app:layout_constraintStart_toStartOf="@+id/txtHours"
+        app:layout_constraintTop_toBottomOf="@+id/txtHours" />
+
+    <TextView
+        android:id="@+id/txtTotalOTWage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Total OT Wage: "
+        app:layout_constraintStart_toStartOf="@+id/txtTotalRegularWage"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalRegularWage" />
+
+    <TextView
+        android:id="@+id/txtTotalRegularWage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Total Regular Wage: "
+        app:layout_constraintStart_toStartOf="@+id/txtOverTime"
+        app:layout_constraintTop_toBottomOf="@+id/txtOverTime" />
+
+    <TextView
+        android:id="@+id/txtTotalWage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="Total Wage: "
+        app:layout_constraintStart_toStartOf="@+id/txtTotalOTWage"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalOTWage" />
+</androidx.constraintlayout.widget.ConstraintLayout>

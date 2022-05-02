@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Balansag_WageCalc</string>
+    <string name="empName">Employee Name</string>
+    <string name="empHours">Hours Worked</string>
+</resources>
